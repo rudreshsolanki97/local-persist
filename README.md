@@ -35,7 +35,7 @@ It doesn't really say *why* one way is recommended over the other, but I provide
 I provide an `install` script that will download the proper binary, set up an Systemd service to start when Docker does and enable it.
 
 ```shell
-curl -fsSL https://raw.githubusercontent.com/MatchbookLab/local-persist/master/scripts/install.sh | sudo bash
+curl -fsSL https://raw.githubusercontent.com/rudreshsolanki97/local-persist/master/scripts/install.sh | sudo bash
 ```
 
 This needs be to run on the Docker *host*. i.e. running that on a Mac won't work (and it will print a message saying as much and exit).
@@ -43,7 +43,7 @@ This needs be to run on the Docker *host*. i.e. running that on a Mac won't work
 This has been tested on Ubuntu 15.10, and is known *not* to work on CoreOS (yet). If you need to use Upstart instead of Systemd, you can pass the `--upstart` flag to the install script, but it isn't as tested, so it may not work:
 
 ```shell
-curl -fsSL https://raw.githubusercontent.com/MatchbookLab/local-persist/master/scripts/install.sh | sudo bash -s -- --upstart
+curl -fsSL https://raw.githubusercontent.com/rudreshsolanki97/local-persist/master/scripts/install.sh | sudo bash -s -- --upstart
 ```
 
 Follow the same process to update to the latest version.
